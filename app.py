@@ -21,18 +21,12 @@ import base64
 # Configuration
 load_dotenv()
 
-<<<<<<< HEAD
 # Configure API Keys
 google_api_key = os.getenv('GOOGLE_API_KEY')
 openai_api_key = os.getenv('OPENAI_API_KEY')
 
 # Set OpenAI API Key
 openai.api_key = openai_api_key
-=======
-genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
-openai.api_key = os.getenv('OPENAI_API_KEY')
-client = openai.OpenAI()
->>>>>>> parent of bcccfde (Update app.py)
 
 def plot_predictions(predictions, class_index, predicted_label):
  
